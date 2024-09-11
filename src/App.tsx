@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <button onClick={openModalHandler.bind(null, false)}>Open EVM modal (Light theme)</button>
-      <button onClick={openModalHandler.bind(null, true)}>Open Solana Modal (Dark mode)</button>
+      <button onClick={openModalHandler.bind(null, true)}>Open Solana Modal (Dark theme)</button>
     </>
   )
 }
