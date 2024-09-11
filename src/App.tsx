@@ -15,8 +15,6 @@ function App() {
   }
   const openModalHandler = (isSolana: boolean) => {
     const modal = getModal(isSolana)
-    modal.resetNetwork()
-    console.log("modal status:", modal.getThemeMode())
 
     modal.open({view: "Connect"})
   }
@@ -24,8 +22,8 @@ function App() {
 
   return (
     <>
-      <button onClick={openModalHandler.bind(null, false)}>Open EVM modal</button>
-      <button onClick={openModalHandler.bind(null, true)}>Open Solana Modal</button>
+      <button onClick={openModalHandler.bind(null, false)}>Open EVM modal (Light theme)</button>
+      <button onClick={openModalHandler.bind(null, true)}>Open Solana Modal (Dark mode)</button>
     </>
   )
 }
